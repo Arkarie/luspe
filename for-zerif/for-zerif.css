@@ -1,0 +1,18 @@
+.navbar.navbar-black {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.header-content-wrap {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.green-btn, .red-btn {
+  border: 1px solid #909acd !important;
+}
+
+.green-btn:hover, .red-btn:hover {
+  background: #909acd;
+  border: 1px solid #909acd;
+}
+
+/*# sourceMappingURL=for-zerif.css.map */
