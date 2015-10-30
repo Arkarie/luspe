@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Satisfy);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,600,500);
 html {
-  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: "Source Sans Pro", sans-serif !important;
   font-size: 112.5%;
 }
 
@@ -11,34 +12,59 @@ body, input, textarea, select, button {
 }
 
 body {
+  font-family: "Source Sans Pro", sans-serif !important;
   font-size: 18px;
   line-height: 1.45;
   font-weight: 400;
   letter-spacing: normal;
 }
 
+a {
+  color: #909acd;
+}
+
+/* ================ NAV config ================= */
 #main-nav.fixed {
   top: inherit;
 }
 
-.navbar.navbar-black {
-  background: rgba(255, 255, 255, 0.6) none repeat scroll 0% 0%;
+.navbar.navbar-black, .navbar {
+  background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0%;
+}
+
+.navbar-inverse .navbar-nav ul.sub-menu {
+  background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0% !important;
+  top: 76px;
+}
+
+.navbar-inverse .navbar-nav ul.sub-menu li:hover > a, .navbar-inverse .navbar-nav ul.sub-menu li.link-focus > a {
+  color: #909acd;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #333;
-}
-
-.rb-hidden-logo {
-  display: block;
+  color: #333333;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 #site-navigation {
-  float: inherit;
+  /*   float: inherit; */
 }
 
+.navbar-black nav ul.nav {
+  text-align: right;
+}
+
+@media screen and (max-width: 767px) {
+  .dropdownmenu {
+    background: url(images/menu-icon.png) center center no-repeat #909acd;
+  }
+}
+/* =============== HEADER INTRO BIG TEXT AREA ============= */
 .header-content-wrap {
   background: rgba(0, 0, 0, 0.1);
+  padding: none;
 }
 
 .green-btn, .red-btn {
@@ -52,14 +78,119 @@ body {
 
 .intro-text {
   font-family: "Satisfy", cursive;
-  text-transform: lowercase;
+  text-transform: none;
   font-size: 65px;
   line-height: 95px;
   opacity: 0.9;
+  padding-top: 50px;
 }
 
-.navbar-black nav ul.nav {
-  text-align: right;
+/* =========== SECTION HEADERS  ================ */
+.dark-text, .white-text, .black-text {
+  color: inherit;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
 }
 
-/*# sourceMappingURL=for-zerif.css.map */
+/* ================  O QUE FAZEMOS ================= */
+.focus-box .service-icon {
+  border: none;
+}
+
+.focus-box p {
+  color: #333333 !important;
+  font-family: "Source Sans Pro", sans-serif !important;
+  font-size: 17px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.section-header h2:after {
+  background: #909acd;
+}
+
+/* ==================== QUEM SOMOS ======================== */
+.about-us p {
+  color: #939393;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* ===================== PRIMARY COLOR ==================== */
+ul.nav > li.current_page_item > a:before {
+  background: #909acd;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #909acd !important;
+}
+
+.navbar-toggle.active {
+  background-color: #909acd !important;
+}
+
+.team-member h5:before {
+  background: #909acd !important;
+}
+
+.team-member:hover .details {
+  background: #909acd none repeat scroll 0% 0% !important;
+}
+
+.team-member .social-icons ul li a:hover {
+  color: #909acd;
+}
+
+.focus-box .service-icon:hover {
+  border: 10px solid #909acd !important;
+}
+
+.focus-box .red-border-bottom:before, .works .red-border-bottom:before, .listpost-content-wrap .entry-title a:after {
+  background: #909acd !important;
+}
+
+.entry-title:before, .widget .widget-title:before {
+  background: #909acd;
+}
+
+.rb-site-title {
+  color: #909acd;
+}
+
+.rb-site-description {
+  color: #909acd;
+}
+
+/* ======================= FIQUE POR DENTRO ========================= */
+.testimonial {
+  background: rgba(144, 154, 205, 0.6) none repeat scroll 0% 0% !important;
+}
+
+.our-team .row > div:nth-child(4n+1) .red-border-bottom::before {
+  background: #909acd none repeat scroll 0% 0%;
+}
+
+#client-feedbacks > ul {
+  text-align: left;
+}
+
+#client-feedbacks > ul > li {
+  line-height: 2;
+}
+
+#client-feedbacks > ul > li > a {
+  color: #333333;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+#client-feedbacks > ul > li > a:hover {
+  color: white;
+}
+
+.widgettitle {
+  font-weight: 300;
+  font-size: 40px;
+  font-family: "Source Sans Pro", sans-serif;
+}
