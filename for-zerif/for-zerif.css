@@ -1,5 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+html {
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size: 112.5%;
+}
+
+body, input, textarea, select, button {
+  text-rendering: optimizelegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga", "kern";
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+#main-nav.fixed {
+  top: inherit;
+}
+
 .navbar.navbar-black {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.6) none repeat scroll 0% 0%;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #333;
+}
+
+.rb-hidden-logo {
+  display: block;
+}
+
+#site-navigation {
+  float: inherit;
 }
 
 .header-content-wrap {
@@ -12,7 +47,19 @@
 
 .green-btn:hover, .red-btn:hover {
   background: #909acd;
-  border: 1px solid #909acd;
+  border: 1px solid #909acd !important;
+}
+
+.intro-text {
+  font-family: "Satisfy", cursive;
+  text-transform: lowercase;
+  font-size: 65px;
+  line-height: 95px;
+  opacity: 0.9;
+}
+
+.navbar-black nav ul.nav {
+  text-align: right;
 }
 
 /*# sourceMappingURL=for-zerif.css.map */
