@@ -1,0 +1,67 @@
+@import "colors";
+@import "fonts";
+
+
+html {
+    font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 112.5%;
+}
+
+
+
+body, input, textarea, select, button {
+    text-rendering: optimizelegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga", "kern";
+}
+
+body {
+    font-size: 18px;
+    line-height: 1.45;
+    font-weight: 400;
+    letter-spacing: normal;   
+}
+
+#main-nav.fixed {
+    top: inherit;
+}
+
+.navbar.navbar-black {
+    background: rgba(255, 255, 255, 0.6) none repeat scroll 0% 0%;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: $black;   
+}
+.rb-hidden-logo {
+    display: block;
+}
+#site-navigation {
+    float: inherit;
+}
+
+.header-content-wrap {
+    background: rgba(0, 0, 0, 0.1);   
+}
+
+.green-btn, .red-btn {
+    border: 1px solid $purple !important;
+}
+
+.green-btn:hover, .red-btn:hover {
+    background: $purple;
+    border: 1px solid $purple !important;
+}
+
+.intro-text{
+    font-family: $ff-big-title;
+    text-transform: lowercase;
+    font-size: 65px;
+    line-height: 95px;
+    opacity: 0.9;
+        
+}
+
+.navbar-black nav ul.nav {
+    text-align: right;   
+}
