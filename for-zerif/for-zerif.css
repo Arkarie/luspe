@@ -1,5 +1,24 @@
 @import url(https://fonts.googleapis.com/css?family=Satisfy);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,600,500);
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,600,500);
+/* ==================== CONTENT LAYOUT ==================== */
+.site-content {
+  background: #F6F6F6 none repeat scroll 0% 0%;
+}
+
+article .hentry {
+  border: none;
+}
+
+.entry-title {
+  font-size: 30px;
+  padding-top: 10px;
+  font-weight: 200;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 35px;
+}
+
 html {
   font-family: "Source Sans Pro", sans-serif !important;
   font-size: 112.5%;
@@ -28,13 +47,22 @@ a {
   top: inherit;
 }
 
+.header.header > .navbar {
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.11);
+}
+
 .navbar.navbar-black, .navbar {
   background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0%;
 }
 
 .navbar-inverse .navbar-nav ul.sub-menu {
-  background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0% !important;
-  top: 76px;
+  background: rgba(255, 255, 255, 0.9) none repeat scroll 0% 0% !important;
+  right: 0;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.11);
+}
+
+.navbar-inverse .navbar-nav ul.sub-menu li {
+  float: right;
 }
 
 .navbar-inverse .navbar-nav ul.sub-menu li:hover > a, .navbar-inverse .navbar-nav ul.sub-menu li.link-focus > a {
@@ -117,6 +145,10 @@ a {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+.team-member .position {
+  padding-top: 7px;
+}
+
 /* ===================== PRIMARY COLOR ==================== */
 ul.nav > li.current_page_item > a:before {
   background: #909acd;
@@ -135,7 +167,9 @@ ul.nav > li.current_page_item > a:before {
 }
 
 .team-member:hover .details {
-  background: #909acd none repeat scroll 0% 0% !important;
+  background: rgba(144, 154, 205, 0.8) none repeat scroll 0% 0% !important;
+  color: white;
+  opacity: 1;
 }
 
 .team-member .social-icons ul li a:hover {
@@ -193,4 +227,9 @@ ul.nav > li.current_page_item > a:before {
   font-weight: 300;
   font-size: 40px;
   font-family: "Source Sans Pro", sans-serif;
+}
+
+/* ======================== FOTTER =================================== */
+.copyright {
+  background: none;
 }

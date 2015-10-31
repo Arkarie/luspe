@@ -1,0 +1,20 @@
+@import "colors";
+@import "fonts";
+
+/* ==================== CONTENT LAYOUT ==================== */
+
+.site-content {
+    background: #F6F6F6 none repeat scroll 0% 0%;
+}
+
+article .hentry {
+    border: none;   
+}
+
+.entry-title {
+    font-size: 30px;
+    padding-top: 10px;
+    font-weight: 200;
+    font-family: $ff-body;
+    line-height: 35px;   
+}
